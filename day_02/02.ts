@@ -16,7 +16,6 @@ function main() {
 
 function isSafeWithRemoval(row: number[]) {
   if (isSafe(row)) return true;
-  // try removing each element and check if it's safe after that. only remove one at a time.
   for (let i = 0; i < row.length; i++) {
     const newRow = row.filter((_, index) => index !== i);
     if (isSafe(newRow)) return true;
