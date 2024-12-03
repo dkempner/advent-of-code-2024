@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@types/node": "^22.10.1"
+  },
+  "scripts": {
+    "solve": "sh -c 'day=\"$1\"; part=\"$2\"; npx ts-node day_${day}/${part}.ts' --"
   }
 }
